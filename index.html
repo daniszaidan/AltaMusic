@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alta Music - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" href="css/font-awesome/font-awesome.min.css"/>
+</head>
+<body>
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<header id="header">
+		<nav id="nav">
+			<div class="menu-mobile" onclick="toggleMenu();">
+				<!-- <div id="menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div> -->
+				<img class="menu-icon" src="assets\icon\navigation.png">
+				<a>Menu</a>
+			</div>
+			<ul id="menu-list">	
+				<li><a href="about.html">About</a></li>
+				<li><a href="genre.html">Genre</a></li>
+				<li><a href="artist.html">Artist</a></li>
+				<li><a href="music.html">Music</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+	<div class="z-index">
+			
+		
+		<div class="landing-page" id="layout1">
+			<div id="judul">
+				<h1>Alta Music</h1>
+				<h4>Discover All Music for Everyone</h4>
+			</div>
+			<div id="slide-image">
+				<div id="slide-one" class="videonya">
+					<video class="content-video" id="myVideo1" loop autoplay>
+						<!-- <source src="assets/video/video2.MP4" type="video/mp4"> -->
+						<source src="assets/video/bleach.MP4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div id="slide-two" class="videonya">
+					<video class="content-video" id="myVideo2" loop>
+						<source src="assets/video/video1.MKV" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+			<div id="arrow-left" class="arrow" onclick="plusSlides(-1)"><</div>
+			<div id="arrow-right" class="arrow" onclick="plusSlides(1)">></div>
+		</div>
+
+		<!-- <button onclick="playVid()" type="button">Play Video</button>
+		    <button onclick="pauseVid()" type="button">Pause Video</button><br> 
+
+		    <video id="testVideo" width="320" height="176">
+		      <source src="assets/video/video1.mp4" type="video/mp4">
+		    </video> -->
+
+
+		<div class="music-layout-home">
+			<div class="container">
+				<h2>Music</h2>
+				<div class="border-bottom"></div>
+				<div class="left music-left">
+					<div class="four-music">
+						<div class="music">
+							<img class="cover-music" src="assets\img\cover\let_me_hear.jpg">
+								<div class="img-blur"></div>
+
+							<div class="player">
+								<!-- <div class="prev"></div> -->
+								<div class="play" onclick="playmusic()">
+									<!-- <img src=""> -->
+									<i class="fa fa-play" aria-hidden="true"></i>
+								</div>
+								<!-- <div class="nev"></div> -->
+							</div>
+							<audio id="musicnya">
+								<source src="assets\music\fireflies.mp3" type="audio/mp3">
+							</audio>
+						</div>
+						<div class="music">
+							<img class="cover-music" src="assets\img\cover\step_up_love.jpg">
+								<div class="img-blur"></div>
+
+							<div class="player">
+								<!-- <div class="prev"></div> -->
+								<div class="play" onclick="playmusic()">
+									<!-- <img src=""> -->
+									<i class="fa fa-play" aria-hidden="true"></i>
+								</div>
+								<!-- <div class="nev"></div> -->
+							</div>
+							<audio id="musicnya">
+								<source src="assets\music\let_me_hear.mp3" type="audio/mp3">
+							</audio>
+						</div>
+						<div class="music">
+							<img class="cover-music" src="assets\img\cover\brave_shine.jpg">
+								<div class="img-blur"></div>
+
+							<div class="player">
+								<!-- <div class="prev"></div> -->
+								<div class="play" onclick="playmusic()">
+									<!-- <img src=""> -->
+									<i class="fa fa-play" aria-hidden="true"></i>
+								</div>
+								<!-- <div class="nev"></div> -->
+							</div>
+							<audio id="musicnya">
+								<source src="assets\music\let_me_hear.mp3" type="audio/mp3">
+							</audio>
+						</div>
+						<div class="music">
+							<img class="cover-music" src="assets\img\cover\savior_of_song.jpg">
+								<div class="img-blur"></div>
+
+							<div class="player">
+								<!-- <div class="prev"></div> -->
+								<div class="play" onclick="playmusic()">
+									<!-- <img src=""> -->
+									<i class="fa fa-play" aria-hidden="true"></i>
+								</div>
+								<!-- <div class="nev"></div> -->
+							</div>
+							<audio id="musicnya">
+								<source src="assets\music\let_me_hear.mp3" type="audio/mp3">
+							</audio>
+						</div>
+					</div>
+				</div>
+				<div class="left music-right">
+					<article>
+						<h1>What's on Alta Music ?</h1>
+						<h3>Music</h3>
+						<p>There are millions of songs on Alta Music. Play your favorites, discover new tracks, and build the perfect collection</p>
+						<h3>Playlists</h3>
+						<p>You'll find readymade playlists to match your mood, put together by music fans and experts</p>
+						<h3>Featured</h3>
+						<p>Hear this week's latest singles and albums, and check out what's hot in this week</p>
+					</article>
+				</div>
+			</div>
+		</div>
+
+		<div class="artist-layout-home">	
+			<div class="bg-artist">
+				
+			
+			<div class="container container-artist">
+				<h2>Artist</h2>
+				<div class="border-bottom"></div>
+
+				<div class="frame">
+					<div class="button next" id="next-artist" onclick="next()"><a>></a></div>
+					<div class="button prev" id="prev-artist" onclick="prev()"><a><</a></div>
+					<div class="artist-frame">
+
+					<div class="artist-frame-2" id="artist-frame-2">
+						<a href="artist-detail.html">
+						<div class="artist-image">
+							<img class="artist-image-img" src="assets\img\artist\aimer.png">
+							<div class="img-blur"></div>
+							<a class="artist-name" href="artist-detail.html">Aimer</a>
+						</div>
+						</a>
+						<div class="artist-image">
+							<img class="artist-image-img" src="assets\img\artist\maroon-5.png">
+							<div class="img-blur"></div>
+							<a class="artist-name" href="">Maroon 5</a>
+						</div>
+						<div class="artist-image">
+							<img class="artist-image-img" src="assets\img\artist\falilv.png">
+							<div class="img-blur"></div>
+							<a class="artist-name" href="">Fear and Loathing in Las Vegas</a>
+						</div>
+						<div class="artist-image">
+							<img class="artist-image-img" src="assets\img\artist\daoko.png">
+							<div class="img-blur"></div>
+							<a class="artist-name" href="">Daoko</a>
+						</div>
+						<div class="artist-image">
+							<img class="artist-image-img" src="assets\img\artist\nano.png">
+							<div class="img-blur"></div>
+							<a class="artist-name" href="">Nano</a>
+						</div>
+						<div class="artist-image">
+							<img class="artist-image-img" src="assets\img\artist\one-ok-rock.png">
+							<div class="img-blur"></div>
+							<a class="artist-name" href="">One Ok Rock</a>
+						</div>
+						<div class="artist-image">
+							<img class="artist-image-img" src="assets\img\artist\one-direction.png">
+							<div class="img-blur"></div>
+							<a class="artist-name" href="">One Direction</a>
+						</div>
+						<div class="artist-image">
+							<img class="artist-image-img" src="assets\img\artist\kenshi-yonezu.png">
+							<div class="img-blur"></div>
+							<a class="artist-name" href="">Kenshi Yonezu</a>
+						</div>
+
+					</div>
+				</div>
+				
+				<!-- <h1 id="next-artist" onclick="next()">next</h1>
+				<h1 id="prev-artist" onclick="prev()">prev</h1> -->
+			</div>
+			</div>
+		</div>
+
+		<div class="genre-layout-home">
+			<div class="container">
+				<h2>Genre</h2>
+				<div class="border-bottom"></div>
+
+				<div class="genre-frame">
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre pop.png">
+							<a class="genre-name" href="">POP</a>
+						</div>
+					</div>
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre rock.png">
+							<a class="genre-name" href="">ROCK</a>
+						</div>
+					</div>
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre edm.png">
+							<a class="genre-name" href="">EDM</a>
+						</div>
+					</div>
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre hiphop.png">
+							<a class="genre-name" href="">HIP HOP</a>
+						</div>
+					</div>
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre rnb.png">
+							<a class="genre-name" href="">RNB</a>
+						</div>
+					</div>
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre klasik.png">
+							<a class="genre-name" href="">CLASSIC</a>
+						</div>
+					</div>
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre blues.png">
+							<a class="genre-name" href="">BLUES</a>
+						</div>
+					</div>
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre funk.png">
+							<a class="genre-name" href="">FUNK</a>
+						</div>
+					</div>
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre jazz.png">
+							<a class="genre-name" href="">JAZZ</a>
+						</div>
+					</div>
+					<div class="genre-box">
+						<div class="genre-image-frame">
+							<img class="genre-image" src="assets\genre\genre country.png">
+							<a class="genre-name" href="">MORE<br>GENRE</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+		<footer>
+			<div class="container">
+				<div class="footer-top">
+					<p>Get timely update from your favorite music</p>
+					<form>
+						<input type="email" placeholder="Enter your email address">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+				<div class="footer-bottom">
+					<div class="row-four">
+						<div class="row-up">
+							<h3>Link</h3>
+						</div>
+						<div class="row-down">
+							<div class="link">
+								<a href="">Music</a>
+							</div>
+							<div class="link">
+								<a href="">Artist</a>
+							</div>
+							<div class="link">
+								<a href="">Genre</a>
+							</div>
+							<div class="link">
+								<a href="">About</a>
+							</div>
+						</div>
+					</div>
+					<div class="row-four">
+						<div class="row-up">
+							<h3>Social Media</h3>
+						</div>
+						<div class="row-down">
+							<div class="sosmed">
+								<img src="assets\icon\youtube.png">
+							</div>
+							<div class="sosmed">
+								<img src="assets\icon\twitter.png">
+							</div>
+							<div class="sosmed">
+								<img src="assets\icon\facebook.png">
+							</div>
+							<div class="sosmed">
+								<img src="assets\icon\instagram.png">
+							</div>
+						</div>
+					</div>
+					<div class="row-four">
+						<div class="row-up">
+							<h3>Get our apps</h3>
+						</div>
+						<div class="row-down">
+							<div class="app">
+								<img src="assets\img\gp.png">
+							</div>
+							<div class="app">
+								<img src="assets\img\as.png">
+							</div>
+						</div>
+					</div>
+					<div class="row-four">
+						<div class="row-up">
+							<h3>Big Project - Music</h3>
+						</div>
+						<div class="row-down">
+							<p>Copyright &copy 2017 </p>
+							<p>All Rights Reserved - ZeroDev Team</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+	</main>
+
+
+
+	<div class="music-player" id="music-player">
+		<div class="layout-music-play" id="layout-music-play">
+			<div class="cover-music-play">
+				<img class="" src="assets\img\cover\fireflies.jpg">
+			</div>
+		</div>
+		<div id="minmax">
+			<div class="title-music-play" id="title-music-play">
+				<a>Fireflies</a>
+				<a href="">Owl City</a>
+			</div>
+			<div class="time-music" id="time-music">
+				<input type="range" min="0" max="100" value="3">
+			</div>
+			<div class="frame-music-button" id="frame-music-button">
+				<div class="music-button">
+					<img src="assets\icon\prev.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\pause.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\next.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\shuffle.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\refresh.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\share.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\speaker.png">
+				</div>
+			</div>
+			<div class="option">
+				<div class="right">
+					<div class="option-button" onclick="close_button()">
+						<img src="assets\icon\close.png">
+					</div>
+					<div class="option-button">
+						
+					</div>
+					<div class="option-button" onclick="minmax()">
+						<img style="transform: rotate(-90deg);" src="assets\icon\arow down.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<script>
+		$('#myVideo1').play();
+		// $('#myVideo1')[0].play();
+		$('#arrow-right').click(function(){
+			$('#myVideo2')[0].play();
+			$('#myVideo1')[0].pause();
+		})
+		$('#arrow-left').click(function(){
+			$('#myVideo1')[0].play();
+			$('#myVideo2')[0].pause();
+		})
+
+		function playmusic(){
+
+			var minmax = document.getElementById('minmax');
+			minmax.style.cssText = "width: auto;";
+
+			var lmp = document.getElementById('layout-music-play');
+			lmp.style.cssText = "width: 10%;";
+
+			var ggwp = document.getElementById("music-player");
+			ggwp.style.cssText = "width: 100%; overflow: hidden;";
+
+			var music = document.getElementById("musicnya"); 
+			music.play();
+
+			$('#myVideo2')[0].pause();
+			$('#myVideo1')[0].pause();
+		}
+	</script>
+
+</body>
+</html>
+

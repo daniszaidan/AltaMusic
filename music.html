@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alta Music - Music</title>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" href="css/font-awesome/font-awesome.min.css"/>
+</head>
+<body>
+
+
+	<script type="text/javascript" src="script.js"></script>
+
+	<header id="header">
+		<nav id="nav">
+			<div class="menu-mobile" onclick="toggleMenu();">
+				<!-- <div id="menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div> -->
+				<img class="menu-icon" src="assets\icon\navigation.png">
+				<a>Menu</a>
+			</div>
+			<ul id="menu-list">	
+				<li><a href="about.html">About</a></li>
+				<li><a href="genre.html">Genre</a></li>
+				<li><a href="artist.html">Artist</a></li>
+				<li><a href="music.html">Music</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="landing-page-sub landing-page-music">
+		<h1>Music</h1>
+	</div>
+
+	<main class="main-bg">
+
+	<div class="z-index">
+
+		<div class="container">
+			<div class="header-music">
+				<div class="left">
+					<a href="music.html">Music</a>
+					<a href="music.html">Album</a>
+					<a href="genre.html">Genre</a>
+				</div>
+				<div class="right">
+					<select>
+						<option>Sort By</option>
+						<option>Date</option>
+						<option>Artist</option>
+						<option>Popular</option>
+					</select>
+
+					<img class="icon-header" src="assets\icon\search.png">
+					<!-- <a href=""><i class="fa fa-search" aria-hidden="true"></i></a> -->
+				</div>
+			</div>
+			
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\fireflies.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+
+				<div class="title-music">
+					<h4>Fireflies</h4>
+					<a href="">Owl City</a>
+				</div>
+				<audio id="musicnya">
+					<source src="assets\music\fireflies.mp3" type="audio/mp3">
+				</audio>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\step_up_love.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Step Up Love</h4>
+					<a href="">Daoko x Yasuyuki Okamura</a>
+				</div>
+				<audio id="musicnya">
+					<source src="assets\music\step_up_love.mp3" type="audio/mp3">
+				</audio>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\brave_shine.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Brave Shine</h4>
+					<a href="">Aimer</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\savior_of_song.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Savior of Song</h4>
+					<a href="">Nano x MY FIRST STORY</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\meaning_of_existence.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Meaning of Existence</h4>
+					<a href="">Fear and Loathing in Las Vegas</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+			<div class="music">
+				<img class="cover-music" src="assets\img\cover\clock_strikes.jpg">
+					<div class="img-blur"></div>
+
+				<div class="favorite">
+					<i class="fa fa-heart" aria-hidden="true"></i>
+				</div>
+
+				<div class="player">
+					<!-- <div class="prev"></div> -->
+					<div class="play" onclick="playmusic()">
+						<!-- <img src=""> -->
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<!-- <div class="nev"></div> -->
+				</div>
+				
+				<div class="title-music">
+					<h4>Clock Strikes</h4>
+					<a href="">One Ok Rock</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+		
+	</main>
+
+		<footer>
+			<div class="container">
+				<div class="footer-top">
+					<p>Get timely update from your favorite music</p>
+					<form>
+						<input type="email" placeholder="Enter your email address">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+				<div class="footer-bottom">
+					<div class="row-four">
+						<div class="row-up">
+							<h3>Link</h3>
+						</div>
+						<div class="row-down">
+							<div class="link">
+								<a href="">Music</a>
+							</div>
+							<div class="link">
+								<a href="">Artist</a>
+							</div>
+							<div class="link">
+								<a href="">Genre</a>
+							</div>
+							<div class="link">
+								<a href="">About</a>
+							</div>
+						</div>
+					</div>
+					<div class="row-four">
+						<div class="row-up">
+							<h3>Social Media</h3>
+						</div>
+						<div class="row-down">
+							<div class="sosmed">
+								<img src="assets\icon\youtube.png">
+							</div>
+							<div class="sosmed">
+								<img src="assets\icon\twitter.png">
+							</div>
+							<div class="sosmed">
+								<img src="assets\icon\facebook.png">
+							</div>
+							<div class="sosmed">
+								<img src="assets\icon\instagram.png">
+							</div>
+						</div>
+					</div>
+					<div class="row-four">
+						<div class="row-up">
+							<h3>Get our apps</h3>
+						</div>
+						<div class="row-down">
+							<div class="app">
+								<img src="assets\img\gp.png">
+							</div>
+							<div class="app">
+								<img src="assets\img\gp.png">
+							</div>
+						</div>
+					</div>
+					<div class="row-four">
+						<div class="row-up">
+							<h3>Big Project - Music</h3>
+						</div>
+						<div class="row-down">
+							<p>Copyright &copy 2017 </p>
+							<p>All Rights Reserved - ZeroDev Team</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+
+	<div class="music-player" id="music-player">
+		<div class="layout-music-play" id="layout-music-play">
+			<div class="cover-music-play">
+				<img class="" src="assets\img\cover\let_me_hear.jpg">
+			</div>
+		</div>
+		<div id="minmax">
+			<div class="title-music-play" id="title-music-play">
+				<a>Fireflies</a>
+				<a href="">Owl City</a>
+			</div>
+			<div class="time-music" id="time-music">
+				<input type="range" min="0" max="100" value="3">
+			</div>
+			<div class="frame-music-button" id="frame-music-button">
+				<div class="music-button">
+					<img src="assets\icon\prev.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\pause.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\next.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\shuffle.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\refresh.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\share.png">
+				</div>
+				<div class="music-button">
+					<img src="assets\icon\speaker.png">
+				</div>
+			</div>
+			<div class="option">
+				<div class="right">
+					<div class="option-button" onclick="close_button()">
+						<img src="assets\icon\close.png">
+					</div>
+					<div class="option-button">
+						
+					</div>
+					<div class="option-button" onclick="minmax()">
+						<img style="transform: rotate(-90deg);" src="assets\icon\arow down.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+</body>
+</html>
