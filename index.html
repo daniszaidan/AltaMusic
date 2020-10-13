@@ -43,8 +43,8 @@
 			<div id="slide-image">
 				<div id="slide-one" class="videonya">
 					<video class="content-video" id="myVideo1"  loop autoplay="true" muted="muted">
-						<!-- <source src="assets/video/video2.MP4" type="video/mp4"> -->
-						<source src="assets/video/bleach.MP4" type="video/mp4">
+						<source src="assets/video/video2.MP4" type="video/mp4">
+						<!-- <source src="assets/video/bleach.MP4" type="video/mp4"> -->
 						Your browser does not support the video tag.
 					</video>
 				</div>
@@ -424,7 +424,21 @@
 	</div>
 
 	<script>
-		$('#myVideo1').play();
+    // const vid = document.getElementById("myVideo1");
+      // vid.muted = false;
+
+    setTimeout(function () {
+      // alert("Hello");
+      const vid = document.getElementById("myVideo1");
+      vid.muted = false;
+      vid.play()
+    }, 1000);
+
+    // document.body.addEventListener("mousemove", function () {
+    //   audio.play()
+    // })
+    
+		// $('#myVideo1').play();
 		// $('#myVideo1')[0].play();
 		$('#arrow-right').click(function(){
 			$('#myVideo2')[0].play();

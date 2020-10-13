@@ -48,8 +48,8 @@ function showSlides(n) {
      		dots[i].className = dots[i].className.replace(" active", "");
       		// vid.play(); 
  	}
-  	slides[slideIndex-1].style.display = "block";  
-  	dots[slideIndex-1].className += " active";
+  	// slides[slideIndex-1].style.display = "block";  
+  	// dots[slideIndex-1].className += " active";
 }
 
 function playmusic(){
